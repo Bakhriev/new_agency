@@ -1,0 +1,77 @@
+.app {
+	display: flex;
+	flex-direction: column;
+
+	min-height: 100vh;
+
+	overflow: hidden;
+
+	background-color: transparent;
+}
+
+.main {
+	position: relative;
+
+	overflow: hidden;
+	flex-grow: 1;
+}
+
+.container {
+	$padding: 15px;
+	$width: 1300px;
+
+	margin-inline: auto;
+	padding-inline: $padding;
+
+	max-width: $width + ($padding * 2);
+	width: 100%;
+}
+
+.gradient {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 3450px;
+	height: 1657px;
+	background-image: url("../img/svg/gradient.svg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	@media screen and (max-width: 992px) {
+		top: -150px;
+		width: 2097px;
+	}
+
+	@media screen and (max-width: 480px) {
+		top: 568px;
+		top: 558px;
+
+		width: 1097px;
+		height: 952px;
+	}
+}
+
+html.lenis,
+html.lenis body {
+	height: auto;
+}
+
+.lenis.lenis-smooth {
+	scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+	overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+	pointer-events: none;
+}

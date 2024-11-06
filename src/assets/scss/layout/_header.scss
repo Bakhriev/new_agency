@@ -1,0 +1,132 @@
+.header {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	background: transparent;
+	padding: 32px 0;
+
+	@media screen and (max-width: 992px) {
+		padding: 8px 0;
+	}
+
+	&__container {
+		display: flex;
+		gap: 20px;
+
+		max-width: 1870px;
+
+		@media screen and (max-width: 1640px) {
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+
+	&__nav {
+		padding-top: 18px;
+		margin-left: auto;
+		margin-right: 90px;
+
+		@media screen and (max-width: 1640px) {
+			display: none;
+		}
+	}
+
+	&__btns {
+		padding-top: 16px;
+
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		height: max-content;
+
+		@media screen and (max-width: 1640px) {
+			padding-top: 0;
+		}
+	}
+
+	&__calc-btn {
+		@media screen and (max-width: 992px) {
+			span {
+				display: none;
+			}
+			svg {
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+
+	&__burger {
+		display: none;
+		@media screen and (max-width: 1640px) {
+			display: flex;
+		}
+	}
+}
+
+.logo {
+	display: block;
+	flex-shrink: 0;
+	&__img {
+		@media screen and (max-width: 992px) {
+			width: 70px;
+			height: 42px;
+		}
+	}
+}
+
+.nav {
+}
+
+.menu {
+	display: flex;
+	gap: 48px;
+	&__item {
+	}
+
+	&__link {
+		position: relative;
+
+		font-size: 13px;
+		color: var(--light-gray-100);
+		transition: color 150ms ease-in-out;
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: -16px;
+			left: 0;
+			width: 100%;
+			border-bottom: 1px solid var(--neon);
+			height: 0;
+			scale: 0 1;
+			transition: scale 150ms ease-in-out;
+		}
+
+		@include hover {
+			color: var(--neon);
+			&::before {
+				scale: 1;
+			}
+		}
+	}
+}
+
+.calc-project {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	font-weight: 400;
+	font-size: 13px;
+	color: var(--neon);
+	transition: opacity 150ms ease-in-out;
+
+	@include hover {
+		opacity: 0.7;
+	}
+
+	&:active {
+		scale: 0.99;
+	}
+}

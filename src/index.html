@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ru">
+	@include('./template/_head.html')
+	<body>
+		<div class="app">
+			@include('./assets/html/components/overlay.html')
+			@include('./assets/html/layout/header.html')
+			<main class="main">
+				<div class="gradient"></div>
+				<!--  -->
+				@include('./assets/html/sections/hero.html')
+				<div class="why-us">
+					<div class="why-us__inner">
+						<h1 class="why-us__title">Почему выбирают нас</h1>
+
+						<div class="why-us__cards section">
+							<div class="text-block">
+								<img
+									src="./assets/img/svg/circle.svg"
+									alt="circle"
+									class="text-block__img" />
+								<div class="text-block__body">
+									<h2 class="text-block__title">Доступная стоимость</h2>
+									<p class="text-block__text">
+										Оптимизируем расходы благодаря модульному подходу и
+										повторному использованию проверенных компонентов
+									</p>
+								</div>
+							</div>
+
+							<div class="text-block">
+								<img
+									src="./assets/img/svg/circle.svg"
+									alt="circle"
+									class="text-block__img" />
+								<div class="text-block__body">
+									<h2 class="text-block__title">Гарантированные сроки</h2>
+									<p class="text-block__text">
+										Четкое планирование и контроль на каждом этапе обеспечивают
+										своевременную сдачу проектов
+									</p>
+								</div>
+							</div>
+
+							<div class="text-block">
+								<img
+									src="./assets/img/svg/circle.svg"
+									alt="circle"
+									class="text-block__img" />
+								<div class="text-block__body">
+									<h2 class="text-block__title">Минимальные риски</h2>
+									<p class="text-block__text">
+										Богатый опыт и отлаженные процессы разработки снижают
+										вероятность неудач
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panels">
+					<div class="panel">
+						<div class="panel__img-wrapper">
+							<img
+								width="729"
+								height="417"
+								src="./assets/img/panel_1.png"
+								alt="" />
+						</div>
+						<p class="panel__text">
+							Удобная и быстрая система бронирования, увеличивающая
+							заполняемость и упрощающая управление
+						</p>
+					</div>
+
+					<div class="panel">
+						<div class="panel__img-wrapper">
+							<img
+								width="729"
+								height="417"
+								src="./assets/img/panel_2.png"
+								alt="" />
+						</div>
+						<p class="panel__text">
+							Интегрированная система заказов с возможностью отслеживания и
+							разнообразными вариантами оплаты, либо разработка CRM-системы для
+							доставки
+						</p>
+					</div>
+
+					<div class="panel">
+						<div class="panel__img-wrapper">
+							<img
+								width="729"
+								height="417"
+								src="./assets/img/panel_3.png"
+								alt="" />
+						</div>
+						<p class="panel__text">
+							Персонализированные предложения и накопительные скидки для
+							повышения повторных продаж, готовы поделиться идеями
+						</p>
+					</div>
+
+					<div class="panel">
+						<div class="panel__img-wrapper">
+							<img
+								width="729"
+								height="417"
+								src="./assets/img/panel_4.png"
+								alt="" />
+						</div>
+						<p class="panel__text">
+							Эффективный инструмент для информирования клиентов о акциях и
+							специальных предложениях
+						</p>
+					</div>
+
+					<div class="panel">
+						<div class="panel__img-wrapper">
+							<img
+								width="729"
+								height="417"
+								src="./assets/img/panel_5.png"
+								alt="" />
+						</div>
+						<p class="panel__text">
+							Сбор обратной связи для улучшения качества обслуживания и
+							привлечения новых клиентов
+						</p>
+					</div>
+				</div>
+
+				<div class="box"></div>
+				<!--  -->
+			</main>
+			@include('./assets/html/layout/footer.html')
+		</div>
+		@include('./template/_scripts.html')
+	</body>
+</html>
